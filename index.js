@@ -40,10 +40,10 @@ inquirer
     type: 'list',
     message: 'Enter the license link.\nIf there is no license, type "N/A"',
     name: 'license',
-    choices: ['[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
-            '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)',
-            '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
-            '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)']
+    choices: ['Apache_2.0-blue',
+            'Boost_1.0-lightblue',
+            'EPL_1.0-red',
+            'MIT-yellow']
     
     },
     {
@@ -70,6 +70,8 @@ inquirer
   let words=
 
 `# ${response.name}
+
+![License](https://img.shields.io/badge/License-${response.license}.svg)
 
 ## Description
 ${response.description}
