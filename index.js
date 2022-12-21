@@ -35,7 +35,35 @@ inquirer
     message: 'Enter the deployment link to your webpage',
     name: 'webpage',
     
-      },
+    },
+    {
+    type: 'list',
+    message: 'Enter the license link.\nIf there is no license, type "N/A"',
+    name: 'license',
+    choices: ['[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+            '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)',
+            '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
+            '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)']
+    
+    },
+    {
+    type: 'input',
+    message: 'Enter any collaborators, if any, with links to their GitHub profiles. link.\nIf there is no collaborators, type "N/A"',
+    name: 'credit',
+    
+    },
+    {
+    type: 'input',
+    message: 'Add your email so users can reach out if they have questions',
+    name: 'email',
+    
+    },
+    {
+    type: 'input',
+    message: 'Add your Github link so users can reach out if they have questions',
+    name: 'github',
+    
+    },
     
   ])
   .then((response) =>{
@@ -43,20 +71,39 @@ inquirer
 
 `# ${response.name}
 
-  ##Description
-  ${response.description}
+## Description
+${response.description}
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
   
-  ## Installation
-  ${response.installation}
+## Installation
+${response.installation}
 
-  ## Usage
-  ${response.usage}
+## Usage
+${response.usage}
 
-  ![Screenshot of webpage]${response.screenshot}
+![Screenshot of webpage]${response.screenshot}
 
-  ##Deployment Link
-  ${response.webpage}
-  `
+## Credits
+${response.credit}
+
+## Deployment Link
+${response.webpage}
+
+## License
+${response.license}
+
+## Questions
+${response.email}
+${response.github}
+
+
+
+`
 
     fs.writeFile('README.md',words , err => {
     if (err) {

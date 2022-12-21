@@ -1,16 +1,34 @@
-# AutoREADME
+# h
 
-  ##Description
-  The purpose of this page is to create a file that can auto generate README files based on user input
+## Description
+h
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
   
-  ## Installation
-  N/A
+## Installation
+h
 
-  ## Usage
-  Users will get a series of questions that relate to the sections of a typical README file. They will enter all the info in and have the file created upon completion
+## Usage
+h
 
-  ![Screenshot of webpage](./assests/images/README.jpg)
+![Screenshot of webpage]h
 
-  ##Deployment Link
-  https://github.com/YacovKopel/AutoREADME
-  
+## Credits
+h
+
+## Deployment Link
+h
+
+## License
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+## Questions
+h
+h
+
+
+
