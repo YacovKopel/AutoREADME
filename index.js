@@ -100,11 +100,8 @@ ${response.webpage}
 ${response.license}
 
 ## Questions
-${response.email}
+${response.email}'\n'
 ${response.github}
-
-
-
 `
 
     fs.writeFile('README.md',words , err => {

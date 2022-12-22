@@ -1,9 +1,9 @@
-# h
+# AutoREADME
 
-![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-h
+the webpage allows users to generate READMEs quickly by answering prompts
 
 ## Table of Contents
 - [Installation](#installation)
@@ -12,25 +12,25 @@ h
 - [License](#license)
   
 ## Installation
-h
+N/A
 
 ## Usage
-h
+The user will be prompted with several questions that will fill in the specific sections of the readme . when finished with the questions the README will be generated
 
-![Screenshot of webpage]h
+![Screenshot of webpage](./assets/images/screenshot.jpeg)
 
 ## Credits
-h
+N/A
 
 ## Deployment Link
-h
+https://github.com/YacovKopel/AutoREADME
 
 ## License
-Boost_1.0-lightblue
+MIT-yellow
 
 ## Questions
-h
-h
+yacovkopel94@gmal.com
+www.github.com/YacovKopel
 
 
 
